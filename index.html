@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <svg width="200" height="90" id="svgCanvas">
+      <rect x="45" y="5" width="80" height="50" class="monitor1"></rect>
+      <rect x="50" y="10" width="70" height="40" class="monitor2"></rect>
+      <rect x="75" y="55" width="20" height="10" class="monitor1"></rect>
+      <polygon points="50,70 120,70 130,80 40,80" class="monitor1"></polygon>
+      <polygon points="55,72 115,72 122,78 48,78" class="monitor2"></polygon>
+      <line x1="55" y1="19" x2="100" y2="19" class="cod"></line>
+      <line x1="55" y1="24" x2="100" y2="24" class="cod"></line>
+      <line x1="55" y1="29" x2="70" y2="29" class="cod"></line>
+      <line x1="55" y1="33" x2="115" y2="33" class="cod"></line>
+      <line x1="55" y1="38" x2="115" y2="38" class="cod"></line>
+      <line x1="55" y1="19" x2="100" y2="19" class="linea-monitor"></line>
+      <line x1="55" y1="24" x2="80" y2="24" class="linea-monitor"></line>
+      <line x1="55" y1="29" x2="110" y2="29" class="linea-monitor"></line>
+      <line x1="55" y1="34" x2="80" y2="34" class="linea-monitor"></line>
+    </svg>
+    <nav>
+      <ul>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="juguemos.html">Juguemos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="titulo">
+      <h1>Programación e Historia</h1>
+    </section>
+
+    <section id="contenido">
+      <h2>Contenido</h2>
+      <div id="contenido-divs">
+        <div class="contenido-div">
+          <img src="assets/img/historia-programacion.jpg" alt="Historia de la programación">
+          <p>Conozcamos un poco sobre la historia de la programación</p>
+          <a href="historia.html" class="btn">Ir a Historia</a>
+        </div>
+        <div class="contenido-div">
+          <img src="assets/img/img2.jpg" alt="Juego de programación">
+          <p>Vamos a jugar un poco utilizando métodos aprendidos en clase</p>
+          <a href="juguemos.html" class="btn">Ir a Juego</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img id="logo" src="assets/img/logo.png" alt="Logo">
+    <div class="footer-text">
+      <h3>Programación e Historia</h3>
+      <p>Sitio con fines educativos - Creado por Mayra Gutierrez</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
