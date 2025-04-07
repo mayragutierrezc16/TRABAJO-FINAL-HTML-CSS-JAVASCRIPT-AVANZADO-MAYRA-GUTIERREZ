@@ -259,4 +259,9 @@ text-align: center;
       width: 95%;
     }
   }
-  
+  @media (max-width: 768px) {
+    .dropzone,
+    .puzzle-piece {
+      flex: 1 1 80%;
+    }
+  }
