@@ -248,20 +248,20 @@ text-align: center;
       opacity: 1;
     }
   }
-  
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .dropzone,
     .puzzle-piece {
-      width: 80%;
+        width: 80%;
     }
-  
+
     .full-image {
-      width: 95%;
+        width: 95%;
     }
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .dropzone,
     .puzzle-piece {
-      flex: 1 1 80%;
+        flex: 1 1 auto;
     }
-  }
+}
