@@ -248,23 +248,7 @@ text-align: center;
       opacity: 1;
     }
   }
-@media (max-width: 768px) {
-    .dropzone,
-    .puzzle-piece {
-        width: 80%;
-    }
 
-    .full-image {
-        width: 95%;
-    }
-}
-
-@media (max-width: 768px) {
-    .dropzone,
-    .puzzle-piece {
-        flex: 1 1 auto;
-    }
-}
 @media (max-width: 768px) {
     .puzzle-piece,
     .dropzone {
