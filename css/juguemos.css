@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url(../assets/img/img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.nav-scrolled,
+.header-scrolled {
+  background-color: #2F3645;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav ul li a:hover {
+  text-shadow: none;
+}
+
+.monitor1 {
+  fill: #767a81de;
+  stroke: #2F3645;
+  stroke-width: 2;
+}
+.monitor2 {
+  fill: #000;
+  stroke: #2F3645;
+  stroke-width: 2;
+}
+.cod {
+  stroke: transparent;
+  stroke-width: 3;
+}
+.linea-monitor {
+  stroke: #00FF00;
+  stroke-width: 3;
+}
+
+footer {
+  background-color: #2F3645;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.footer-text {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.footer-text h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-text p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+#titulo {
+    background-size: cover;
+    color: white;
+    text-shadow: 4px 4px 4px #000;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #logo {
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    #contenido-divs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+.rompecabezas {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.rompecabezas h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.zona-drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.zona-drop {
+    width: 180px;
+    height: 280px;
+    border: 2px dashed #999;
+    background-color: #e0ffe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piezas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pieza {
+    width: 140px;
+    transform: rotate(-8deg);
+    transition: transform 0.3s ease;
+    cursor: grab;
+}
+
+.pieza.colocada {
+    transform: rotate(0deg) scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .zona-drop {
+        width: 140px;
+        height: 220px;
+    }
+
+    .pieza {
+        width: 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .zona-drop {
+        width: 200px;
+        height: 300px;
+    }
+
+    .pieza {
+        width: 150px;
+    }
+}
+  
+  
+h2 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 2px 2px 2px #888;
+    margin-bottom: 40px;
+  }
+  

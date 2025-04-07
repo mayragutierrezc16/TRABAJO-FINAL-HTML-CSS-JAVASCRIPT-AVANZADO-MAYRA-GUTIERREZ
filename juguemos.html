@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header y Footer</title>
+  <link rel="stylesheet" href="css/juguemos.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo-link">
+      <svg width="200" height="90" id="svgCanvas">
+        <rect x="45" y="5" width="80" height="50" class="monitor1"></rect>
+        <rect x="50" y="10" width="70" height="40" class="monitor2"></rect>
+        <rect x="75" y="55" width="20" height="10" class="monitor1"></rect>
+        <polygon points="50,70 120,70 130,80 40,80" class="monitor1"></polygon>
+        <polygon points="55,72 115,72 122,78 48,78" class="monitor2"></polygon>
+        <line x1="55" y1="19" x2="100" y2="19" class="cod"></line>
+        <line x1="55" y1="24" x2="100" y2="24" class="cod"></line>
+        <line x1="55" y1="29" x2="70" y2="29" class="cod"></line>
+        <line x1="55" y1="33" x2="115" y2="33" class="cod"></line>
+        <line x1="55" y1="38" x2="115" y2="38" class="cod"></line>
+        <line x1="55" y1="19" x2="100" y2="19" class="linea-monitor"></line>
+        <line x1="55" y1="24" x2="80" y2="24" class="linea-monitor"></line>
+        <line x1="55" y1="29" x2="110" y2="29" class="linea-monitor"></line>
+        <line x1="55" y1="34" x2="80" y2="34" class="linea-monitor"></line>
+      </svg>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="juguemos.html">Juguemos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="titulo">
+      <h1>JUGUEMOS UN POCO</h1>
+    </section>
+    <section class="rompecabezas">
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+      
+        <div class="zona-drop-container">
+          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      
+        <div class="piezas">
+          <img src="assets/img/Rompe1.png" id="pieza1" class="pieza" draggable="true" ondragstart="drag(event)">
+          <img src="assets/img/Rompe2.png" id="pieza2" class="pieza" draggable="true" ondragstart="drag(event)">
+          <img src="assets/img/Rompe3.png" id="pieza3" class="pieza" draggable="true" ondragstart="drag(event)">
+        </div>
+      </section>           
+      
+  </main>
+  <footer>
+    <img id="logo" src="assets/img/logo.png" alt="Logo">
+    <div class="footer-text">
+      <h3>Programación e Historia</h3>
+      <p>Sitio con fines educativos - Creado por Mayra Gutierrez</p>
+    </div>
+  </footer>
+<script src="js/juguemos.js"></script>
+</body>
+</html>
