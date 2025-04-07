@@ -265,3 +265,10 @@ text-align: center;
         flex: 1 1 auto;
     }
 }
+@media (max-width: 768px) {
+    .puzzle-piece,
+    .dropzone {
+      width: 28vw;
+      max-width: 120px;
+    }
+  }
