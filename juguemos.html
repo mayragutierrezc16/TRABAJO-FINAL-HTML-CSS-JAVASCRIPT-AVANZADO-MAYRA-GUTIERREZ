@@ -39,18 +39,22 @@
     </section>
     <section class="rompecabezas">
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
-      
-        <div class="zona-drop-container">
-          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-          <div class="zona-drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        </div>
-      
-        <div class="piezas">
-          <img src="assets/img/Rompe1.png" id="pieza1" class="pieza" draggable="true" ondragstart="drag(event)">
-          <img src="assets/img/Rompe2.png" id="pieza2" class="pieza" draggable="true" ondragstart="drag(event)">
-          <img src="assets/img/Rompe3.png" id="pieza3" class="pieza" draggable="true" ondragstart="drag(event)">
-        </div>
+        <div class="puzzle-container">
+            <div class="dropzone" data-pos="1"></div>
+            <div class="dropzone" data-pos="2"></div>
+            <div class="dropzone" data-pos="3"></div>
+          </div>
+          
+          <div class="pieces-container">
+            <img src="assets/img/Rompe1.png" draggable="true" class="puzzle-piece" data-piece="1" />
+            <img src="assets/img/rompe2.png" draggable="true" class="puzzle-piece" data-piece="2" />
+            <img src="assets/img/Rompe3.png" draggable="true" class="puzzle-piece" data-piece="3" />
+          </div>
+          
+          <div id="success-message" class="hidden">
+            <img src="assets/img/rompecabezas.png" class="full-image" />
+            <button onclick="reiniciar()">REINICIAR</button>
+          </div>          
       </section>           
       
   </main>
